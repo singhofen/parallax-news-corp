@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Parallax Template - Materialize css</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/news-corp.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  </head>
+<body>
+  <!-- scroll to top button -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">arrow_upward</i></button>
+
+  <nav class="grey lighten-2" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#home" class="brand-logo  light">News Corp</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="hoverable blue-text" href="#articles">Articles</a></li>
+        <li><a class="hoverable blue-text" href="#contact">Contact</a></li>
+        <li><a class="hoverable blue-text"  href="#stories">Stories</a></li>
+        <li><a class="hoverable blue-text" href="#content">Content</a></li>
+        <ul id="dropdown1" class="dropdown-content ">
+            <li><a class="hoverable blue-text" href="#">Articles<span class="badge">1</span></a></li>
+            <li><a class="hoverable blue-text" href="#">Articles<span class="white-text blue new badge ">2</span></a></li>
+            <li><a class="hoverable blue-text" href="#">Articles<span class="blue-text"> 3</span></a></li>
+          </ul>
+          <a class="btn dropdown-trigger-main waves-effect waves-light hoverable blue" href="#" data-target="dropdown1">More News<i class="material-icons right">arrow_drop_down</i></a>
+      </ul>
+  
+  
+      <ul id="nav-mobile" class="sidenav grey lighten-2">
+          <div class="background grey lighten-2">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg">
+            </div class="grey lighten-2">
+            <li><a class="hoverable light " href="#">Home</a></li>
+            <li><a class="hoverable light blue-text" href="#articles">Articles</a></li>
+            <li><a class="hoverable light blue-text"  href="#contact">Contact</a></li>
+            <li><a class="hoverable light blue-text" href="#stories">Stories</a></li>
+            <li><a class="hoverable blue-text" href="#content">Content</a></li>
+            <ul id="dropdown2" class="dropdown-content">
+                <li><a class="hoverable light" href="#">Articles 1</a></li>
+                <li><a class="hoverable light" href="#">Articles 2</a></li>
+                <li><a class="hoverable light" href="#">Articles 3</a></li>
+                <li><a class="hoverable light" href="#">Articles 4</a></li>
+
+          </ul>
+          <a class="btn dropdown-trigger-mobile blue light" href="#!" data-target="dropdown2">More News<i class="material-icons right">arrow_drop_down</i></a>
+      </ul>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center light text-lighten-2">News from the world</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit.</h5>
+        </div>
+        <div class="row center">
+            <a class="btn tooltipped waves-effect waves-light btn btn modal-trigger blue light" data-position="bottom" data-tooltip="Click to Contact Us!"href="#modal1">Have a story for us?</a>
+
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+              
+                <h4 class="black-text light">Contact Us</h4>
+               
+                <p class="black-text light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nisi, illo ipsa rerum ducimus tempore quas pariatur dicta inventore dolor esse cupiditate temporibus reiciendis ipsum provident laudantium ipsam commodi mollitia?</p>
+              </div>           
+              <div>
+                <div class="modal-content center">
+                
+                  <form action="#">
+                  
+                    <div class="input-field">
+                      <i class="material-icons prefix">mail</i>
+                      <input type="email" id="name">
+                      <label for="name">Email</label>
+                    </div>
+                    <br>
+              
+                    <div class="input-field">
+                      <i class="material-icons prefix">create</i>
+                      <input type="text" id="pass">
+                      <label for="pass">Message</label>
+                    </div>
+                    <br>
+              
+                    <div class="left" style="margin-left:20px;">
+                      <input type="checkbox" id="check">
+                      <label for="check" class="material-icons">lock</label>
+                    </div>
+                    <br>
+
+
+                    <a href="#" class="modal-close waves-effect  blue btn light" onclick="myFunction()">Submit</a>      <div class="modal-footer">
+                <a href="#" class="modal-close waves-effect  blue btn light">Agree</a>
+                <a href="#" class="modal-close waves-effect blue btn light">Disagree</a>
+              </div>
+                    
+                  </form>
+                  <div class="left-align">
+                  <a href="#" class="modal-close blue-text light">Legal |</a>
+                  <a href="#" class="modal-close blue-text  light">Privacy</a> 
+                </div>    
+                 </div>
+                 
+              </div>
+            </div>
+            
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="https://images.pexels.com/photos/97050/pexels-photo-97050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Unsplashed background img 1"></div>
+  </div>
+
+  <div class="container">
+
+      <div   class="section">
+          <h4 class="accordian-text light">Information | Articles </h4>
+
+        <!--   Icon Section with accordians 3 columns side by side  -->
+        <div class="row">
+          <div class="col s12 m4">
+
+              <ul class="collapsible z-depth-5 hoverable">
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons">business</i>Read More</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quod, optio praesentium autem, minus mollitia, facere inventore repudiandae nostrum ipsum atque explicabo deleniti eos voluptatibus nihil! Numquam dolorem sunt ducimus.</span></div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons">how_to_vote</i>Read More</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam assumenda velit ab dolorum, quisquam fuga enim est odit soluta corrupti ipsum totam, dolor eveniet, perferendis iusto nemo provident in eius?.</span></div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons">whatshot</i>Read More</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum commodi expedita eligendi modi amet rem aliquam ducimus iure excepturi velit a, saepe repudiandae, totam incidunt omnis atque, similique iste provident?</span>
+                 
+                       </div>
+                  </li>
+                </ul>
+          </div>
+  
+          <div class="col s12 m4">
+
+              <ul class="collapsible z-depth-5 hoverable">
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons">sim_card</i>Read More</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quod, optio praesentium autem, minus mollitia, facere inventore repudiandae nostrum ipsum atque explicabo deleniti eos voluptatibus nihil! Numquam dolorem sunt ducimus.</span></div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons">security</i>Read More</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam assumenda velit ab dolorum, quisquam fuga enim est odit soluta corrupti ipsum totam, dolor eveniet, perferendis iusto nemo provident in eius?.</span></div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons">memory</i>Read More</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum commodi expedita eligendi modi amet rem aliquam ducimus iure excepturi velit a, saepe repudiandae, totam incidunt omnis atque, similique iste provident?</span>
+                 
+                       </div>
+                  </li>
+                </ul>
+          </div>
+  
+          <div class="col s12 m4">
+              <ul class="collapsible z-depth-5 hoverable">
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons">all_inclusive</i>Read More</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quod, optio praesentium autem, minus mollitia, facere inventore repudiandae nostrum ipsum atque explicabo deleniti eos voluptatibus nihil! Numquam dolorem sunt ducimus.</span></div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons">place</i>Read More</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam assumenda velit ab dolorum, quisquam fuga enim est odit soluta corrupti ipsum totam, dolor eveniet, perferendis iusto nemo provident in eius?.</span></div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons">layers</i>Read More</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum commodi expedita eligendi modi amet rem aliquam ducimus iure excepturi velit a, saepe repudiandae, totam incidunt omnis atque, similique iste provident?</span>
+                 
+                       </div>
+                  </li>
+                </ul>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+
+  <div class="container">
+
+    <div class="section" id="content">
+        
+      <!--   Icon Section w/o accrodians    -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block card hoverable">
+            <h2 class="center brown-text"><i class="material-icons">layers</i></h2>
+            <h5 class="center">24/7 365 Daily News</h5>
+
+            <p class="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus optio veritatis modi repudiandae culpa sapiente fuga voluptate voluptas maiores officia praesentium placeat ipsa odit, id perferendis, molestias reprehenderit iusto similique.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block card hoverable ">
+            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">Reader  Focused</h5>
+
+            <p class="light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non iste, doloribus at cumque quibusdam neque, corporis minima iure fugiat nostrum eos? At quos alias ex. Veritatis nobis optio at sint.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block card hoverable">
+            <h2 class="center brown-text"><i class="material-icons">web</i></h2>
+            <h5 class="center">100% Online Access</h5>
+
+            <p class="light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio quia ex reiciendis et ducimus aliquid dolorem iure, eligendi, accusamus magnam provident! Tempora, voluptates distinctio nihil reiciendis quas dolorem sequi facilis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+          
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        
+        <div class="row center">
+          <h5 class="header col s12 light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi..
+
+          </h5>
+          
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="parallax"><img src="https://images.pexels.com/photos/97050/pexels-photo-97050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Unsplashed background img 3"></div>
+  </div>
+   
+    
+  <div class="container" id="articles">
+    <div class="section">
+<!-- FIRST CARD -->
+<div class="row">
+    <div class="col s12 m4">
+    <div class="card small hoverable">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="https://source.unsplash.com/random/?detroit,downtown">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Read Article<i class="material-icons right">more_vert</i></span>
+        <p><a href="#">This is a link</a></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4"> Title<i class="material-icons right">close</i></span>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, et minima deleniti odit consectetur explicabo porro! Delectus quidem, eius ipsa tenetur eligendi tempora aspernatur! Nobis praesentium quisquam magnam cupiditate provident?.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, et minima deleniti odit consectetur explicabo porro! Delectus quidem, eius ipsa tenetur eligendi tempora aspernatur! Nobis praesentium quisquam magnam cupiditate provident?.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, et minima deleniti odit consectetur explicabo porro! Delectus quidem, eius ipsa tenetur eligendi tempora aspernatur! Nobis praesentium quisquam magnam cupiditate provident?.</p>
+      </div>
+    </div>
+  </div>
+
+<!-- SECOND CARD -->
+<div class="col s12 m4">
+    <div class="card small hoverable">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="https://source.unsplash.com/random/?cityscape,downtown">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Read Article<i class="material-icons right">more_vert</i></span>
+        <p><a href="#">This is a link</a></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4"> Title<i class="material-icons right">close</i></span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolorum, dolore veritatis voluptatem mollitia, enim in quaerat veniam deleniti voluptates cum commodi, accusamus quia error praesentium. Molestias ullam libero amet?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, et minima deleniti odit consectetur explicabo porro! Delectus quidem, eius ipsa tenetur eligendi tempora aspernatur! Nobis praesentium quisquam magnam cupiditate provident?.</p><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, et minima deleniti odit consectetur explicabo porro! Delectus quidem, eius ipsa tenetur eligendi tempora aspernatur! Nobis praesentium quisquam magnam cupiditate provident?.</p>
+      </div>
+    </div>
+  </div>
+<!-- THIRD CARD -->
+  <div class="col s12 m4">
+      <div class="card small hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="https://images.pexels.com/photos/1672815/pexels-photo-1672815.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4"> Read Article<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4"> Title<i class="material-icons right">close</i></span>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ducimus exercitationem aliquid beatae, itaque nemo neque. Modi nemo laudantium nostrum et eos quam, sed doloremque cumque corrupti molestiae beatae earum?.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, et minima deleniti odit consectetur explicabo porro! Delectus quidem, eius ipsa tenetur eligendi tempora aspernatur! Nobis praesentium quisquam magnam cupiditate provident?.</p>
+        </div>
+      </div>
+    </div>   
+</div>
+</div>
+</div>
+<!-- second card section -->
+<div class="container">
+    <div class="section">
+<!-- FIRST CARD -->
+<div class="row">
+    <div class="col s12 m4">
+    <div class="card small hoverable">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="https://source.unsplash.com/random/?nights,downtown">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Read Article<i class="material-icons right">more_vert</i></span>
+        <p><a href="#">This is a link</a></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Title<i class="material-icons right">close</i></span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quia sapiente velit nulla alias vitae nostrum possimus quas amet quo temporibus, vel non at officiis facere molestiae eum, totam cumque!.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, et minima deleniti odit consectetur explicabo porro! Delectus quidem, eius ipsa tenetur eligendi tempora aspernatur! Nobis praesentium quisquam magnam cupiditate provident?.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, et minima deleniti odit consectetur explicabo porro! Delectus quidem, eius ipsa tenetur eligendi tempora aspernatur! Nobis praesentium quisquam magnam cupiditate provident?.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, et minima deleniti odit consectetur explicabo porro! Delectus quidem, eius ipsa tenetur eligendi tempora aspernatur! Nobis praesentium quisquam magnam cupiditate provident?.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, et minima deleniti odit consectetur explicabo porro! Delectus quidem, eius ipsa tenetur eligendi tempora aspernatur! Nobis praesentium quisquam magnam cupiditate provident?.</p>
+      </div>
+    </div>
+  </div>
+
+<!-- SECOND CARD -->
+<div class="col s12 m4">
+    <div class="card small hoverable">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="https://source.unsplash.com/random/?cityscape,downtown">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Read Article<i class="material-icons right">more_vert</i></span>
+        <p><a href="#">This is a link</a></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Title<i class="material-icons right">close</i></span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis repudiandae officia iusto, hic nostrum cumque nobis laborum quod dolore a laudantium rem enim odit, dignissimos facere architecto itaque consequuntur culpa!.</p>
+      </div>
+    </div>
+  </div>
+<!-- THIRD CARD -->
+  <div class="col s12 m4">
+      <div class="card small hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="https://source.unsplash.com/random/?cityscape,downtown">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Read Article<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4"> Title<i class="material-icons right">close</i></span>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias in velit labore quia eveniet fugiat officiis earum vel consectetur qui! Consequatur temporibus laudantium quis recusandae aliquid veniam nam ipsam atque..</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, et minima deleniti odit consectetur explicabo porro! Delectus quidem, eius ipsa tenetur eligendi tempora aspernatur! Nobis praesentium quisquam magnam cupiditate provident?.</p>
+        </div>
+      </div>
+    </div>   
+</div>
+</div>
+</div>
+</div>
+      <div class="row">
+  
+<!-- START OF PARALLAX IMAGE CONTAINER -->
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        
+        <div class="row center">
+          <h5 class="header col s12 light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi..
+
+          </h5>
+          
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="parallax"><img src="https://images.pexels.com/photos/97050/pexels-photo-97050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Unsplashed background img 3"></div>
+  </div>
+
+ 
+<br>
+<h4 class="accordian-text light" id="stories">Stories</h4>
+<div class="row">
+  <div class="col s12 m6">
+<div class="container hoverable">
+  
+<ul class="collapsible z-depth-5 hoverable">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">pie_chart</i>Read More</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quod, optio praesentium autem, minus mollitia, facere inventore repudiandae nostrum ipsum atque explicabo deleniti eos voluptatibus nihil! Numquam dolorem sunt ducimus.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">place</i>Read More</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam assumenda velit ab dolorum, quisquam fuga enim est odit soluta corrupti ipsum totam, dolor eveniet, perferendis iusto nemo provident in eius?.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">folder_shared</i>Read More</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum commodi expedita eligendi modi amet rem aliquam ducimus iure excepturi velit a, saepe repudiandae, totam incidunt omnis atque, similique iste provident?</span>
+   
+         </div>
+    </li>
+  </ul>
+</div>
+
+</div>
+
+
+    <div class="col s12 m6">
+  <div class="container hoverable">
+    
+  <ul class="collapsible z-depth-5 hoverable">
+      <li>
+        <div class="collapsible-header"><i class="material-icons">scatter_plot</i>Read More</div>
+        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quod, optio praesentium autem, minus mollitia, facere inventore repudiandae nostrum ipsum atque explicabo deleniti eos voluptatibus nihil! Numquam dolorem sunt ducimus.</span></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">notes</i>Read More</div>
+        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam assumenda velit ab dolorum, quisquam fuga enim est odit soluta corrupti ipsum totam, dolor eveniet, perferendis iusto nemo provident in eius?.</span></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">folder_open</i>Read More</div>
+        <div class="collapsible-body"><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum commodi expedita eligendi modi amet rem aliquam ducimus iure excepturi velit a, saepe repudiandae, totam incidunt omnis atque, similique iste provident?</span>
+     
+           </div>
+      </li>
+    </ul>
+  </div>
+  
+  </div>
+ 
+</div>
+
+  </div>
+  
+      <!-- FOOTER  -->
+  <footer class="page-footer blue" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m4 hoverable">
+          <h5 class="white-text light">Company Bio</h5>
+          <p class="grey-text  light text-lighten-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae non exupiditate.</p>
+          <!-- modal contact us btn -->
+          <a class="btn tooltipped waves-effect waves-light btn btn modal-trigger red light" data-position="bottom" data-tooltip="Click to Contact Us!"href="#modal1">Let's get in touch!</a>
+          <!-- The br tag gives padding inside the div   -->
+          
+          <!-- Modal Structure -->
+          <div id="modal1" class="modal">
+              <div class="modal-content">
+              
+                <h4 class="black-text light">Contact Us</h4>
+               
+                <p class="black-text light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nisi, illo ipsa rerum ducimus tempore quas pariatur dicta inventore dolor esse cupiditate temporibus reiciendis ipsum provident laudantium ipsam commodi mollitia?</p>
+              </div>           
+              <div>
+                <div class="modal-content center">
+                
+                  <form action="#">
+                  
+                    <div class="input-field">
+                      <i class="material-icons prefix">mail</i>
+                      <input type="email" id="name">
+                      <label for="name">Email</label>
+                    </div>
+                    <br>
+              
+                    <div class="input-field">
+                      <i class="material-icons prefix">create</i>
+                      <input type="text" id="pass">
+                      <label for="pass">Message</label>
+                    </div>
+                    <br>
+              
+                    <div class="left" style="margin-left:20px;">
+                      <input type="checkbox" id="check">
+                      <label for="check" class="material-icons">lock</label>
+                    </div>
+                    <br>
+                    
+                    <a href="#" class="modal-close waves-effect  blue btn light" onclick="myFunction()">Submit</a>      <div class="modal-footer">
+                <a href="#" class="modal-close waves-effect  blue btn light">Agree</a>
+                <a href="#" class="modal-close waves-effect blue btn light">Disagree</a>
+              </div>
+                    
+                  </form>
+                  <div class="left-align">
+                  <a href="#" class="modal-close blue-text light">Legal |</a>
+                  <a href="#" class="modal-close blue-text  light">Privacy</a> 
+                </div>    
+                 </div>
+                 
+              </div>
+            </div>
+          <br><br>
+        </div>     
+        <div class="col sl2 m4 ">       
+          <h5 class="white-text light ">Location</h5>
+          <video class="responsive-video" controls loop muted autoplay>
+            <source src="road.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="col s12 m4 hoverable">
+          <h5 class="white-text light">Realated Articles</h5>
+          <ul>
+            <li><a class="white-text light" href="#!">Business</a></li>
+            <li><a class="white-text light" href="#!">Home</a></li>
+            <li><a class="white-text light" href="#!">Featured</a></li>
+          </ul>
+          <div class="divider"></div>
+          <br>
+          CEO:  <div class="light chip tooltipped "data-position="top" data-tooltip="Contact Jane Doe!">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Contact Person">
+            Jane Doe
+          
+          </div> 
+        </div>
+     
+      </div>
+      
+      </div>
+    
+      <div class="fixed-action-btn">
+          <a class="btn-floating btn-large red pulse">
+            <i class="large material-icons">apps</i>
+          </a>
+          <ul>
+            <!-- target="_blank" -->
+              <li><a  href="#!" class="btn-floating blue-grey lighten-1"><i class="material-icons">rss_feed</i></a></li>
+              <li><a  href="#!" class="btn-floating blue lighten-1"><i class="material-icons">screen_share</i></a></li>
+              <li><a  href="#!" class="btn-floating  light-green accent-3"><i class="material-icons">web</i></a></li>
+              <li><a  href="#!" class="btn-floating green"><i class="material-icons">textsms</i></a></li>
+            <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+            <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+            <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+            <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+          </ul>
+        </div>
+    <div class="footer-copyright left-align">
+      <div class="container"> 
+        
+            <span class="left-align"><a class="white-text light" href="#top">Let's go back up <i class="material-icons">arrow_upward</i></a></span>  
+      </div> 
+    </div>    
+  </footer> 
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/news-corp.js"></script>
+
+  </body>
+</html>
