@@ -1,4 +1,4 @@
 # parallax-news-corp
 News blog theme made with materialize css <br>
-[Link to parallax news corp theme](https://it-services-web-dev.netlify.com/travel.html) <br>
+Link to parallax news corp theme<br>
 https://news-corp.netlify.com/
